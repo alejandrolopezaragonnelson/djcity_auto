@@ -1,14 +1,12 @@
 package app.home.objects;
 
+import app.common.methods.CommonMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import app.common.methods.CommonMethods;
 
 public class HomePageObjects {
 
   private WebDriver driver;
-
 
   public HomePageObjects(WebDriver driver) {
     CommonMethods.sleep();
@@ -37,5 +35,4 @@ public class HomePageObjects {
     } else {}
     setDriver(driver);
   }
-
 }

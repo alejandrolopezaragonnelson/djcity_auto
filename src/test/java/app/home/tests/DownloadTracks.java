@@ -1,12 +1,10 @@
 package app.home.tests;
 
-import com.example.tests.BaseTest;
-import com.example.tests.PortalInstance;
-
 import app.home.objects.HomePageObjects;
 import app.home.objects.MastersAndProgramsObjects;
 import app.home.objects.SearchResultsPageObjects;
-
+import com.example.tests.BaseTest;
+import com.example.tests.PortalInstance;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Test;
 
@@ -24,6 +22,5 @@ public class DownloadTracks extends BaseTest {
     PortalInstance.getInstance().setUrl("home");
     driver.get(PortalInstance.getInstance().getUrl());
     homePage.AcceptCookies(driver);
-    
   }
 }

@@ -1,9 +1,8 @@
 package app.common;
 
+import app.common.methods.ProgressBarInstance;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
-
-import app.common.methods.ProgressBarInstance;
 
 public class DotTestListener extends TestListenerAdapter {
 

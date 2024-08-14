@@ -1,9 +1,8 @@
 package app.common;
 
+import app.common.methods.ProgressBarInstance;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
-
-import app.common.methods.ProgressBarInstance;
 
 public class SimpleSuiteListener implements ISuiteListener {
 

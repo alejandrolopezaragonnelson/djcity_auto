@@ -1,8 +1,5 @@
 package com.example.tests;
 
-import com.example.Utils.JiraReporter;
-import com.example.Utils.TestInfo;
-import com.example.Utils.TestResult;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Allure;
 import java.io.File;
@@ -134,39 +131,15 @@ public class BaseTest {
         e.printStackTrace();
       }
       Throwable cause = result.getThrowable();
-      TestInfo testInfo = new TestInfo(
-        result.getName(),
-        "FAILED",
-        result.getStartMillis(),
-        result.getEndMillis(),
-        "target/screenshots/" + result.getName() + ".png",
-        cause.getMessage()
-      );
-      TestResult.getInstance().getTestInfoList().add(testInfo);
-    } else {
-      TestInfo testInfo = new TestInfo(
-        result.getName(),
-        "PASSED",
-        result.getStartMillis(),
-        result.getEndMillis(),
-        "",
-        ""
-      );
-      TestResult.getInstance().getTestInfoList().add(testInfo);
-    }
+    } else {}
     if (driver != null) {
       driver.quit();
     }
   }
 
   @BeforeSuite
-  public void beforeSuite() {
-    TestResult.getInstance().setTestInfoList(new ArrayList<>());
-    TestResult.setStartTime(System.currentTimeMillis());
-  }
+  public void beforeSuite() {}
 
   @AfterSuite
-  public void afterSuite() {
-
-  }
+  public void afterSuite() {}
 }

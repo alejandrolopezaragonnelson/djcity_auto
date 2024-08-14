@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MadridTestsSuite">
+    <listeners>
+        <listener class-name="planeta.common.SimpleSuiteListener"/>
+        <listener class-name="planeta.common.DotTestListener"/>
+    </listeners>
+    <test name="BTPW_1885test">
+        <classes>
+            <class name="eae.madrid.tests.BTPW_1885test"/>
+        </classes>
+    </test>
+</suite>
