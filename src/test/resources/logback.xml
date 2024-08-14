@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <root level="info"/>
+    <logger name="org.apache.http" level="warn"/>
+    <logger name="java.lang.Exception" level="error"/>
+</configuration>
